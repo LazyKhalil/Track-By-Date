@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Person</title>
+    <link rel="stylesheet" href="person.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Hey, expected you to be here !!</p>
+      </div>
+      <div class="music-box">
+        <div class="text-container">
+          <p class="big-text">Enter your Birthday.</p>
+          <p class="small-text">And let the music play !</p>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="Example : 06/07 (july 6th)"
+            class="name-input js-name-input"
+          />
+          <button class="submit-button" onclick="checkName()">→</button>
+        </div>
+        <div class="music-player">The music will play here !</div>
+        <p class="worning">Songs are RANDOM.</p>
+      </div>
+    </div>
+    <script src="person.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+    <script
+      src="https://files.bpcontent.cloud/2026/09/10/14/20260910140347-3BUUYTG4.js"
+      defer
+    ></script>
+  </body>
+</html>

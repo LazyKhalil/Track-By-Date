@@ -1,0 +1,223 @@
+body {
+  background-image: url(Images/backgroundPc.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+  margin: 0;
+  color: rgb(234, 239, 245);
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: rgba(230, 239, 251, 0.907);
+  margin: 10px;
+}
+.music-box {
+  height: 600px;
+  width: 75%;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(152, 151, 151, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 12px;
+  border: 1px solid rgba(197, 194, 194, 0.3);
+}
+.text-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(230, 239, 251, 0.907);
+  font-family: "Montserrat", sans-serif;
+}
+.big-text {
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.small-text {
+  font-size: 18px;
+  margin-top: 5px;
+  color: rgba(230, 239, 251, 0.85);
+}
+.input-container {
+  width: 70%;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.name-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border: solid 1px rgb(83, 82, 82);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 20px 20px;
+  border-radius: 18px;
+  color: rgb(230, 239, 251);
+  font-family: "Montserrat", sans-serif;
+}
+input::placeholder {
+  color: rgba(230, 239, 251, 0.712);
+}
+.submit-button {
+  background: rgba(24, 27, 123, 0.772);
+  border: solid 1px rgb(63, 63, 63);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  padding: 20px 20px;
+  border-radius: 18px;
+  color: rgb(230, 239, 251);
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+}
+.music-player {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 70%;
+  margin-top: 40px;
+  color: rgba(230, 239, 251, 0.667);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid rgba(125, 123, 123, 0.517);
+}
+.player-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.song-img {
+  height: 100%;
+  border-radius: 20px;
+}
+.player-middel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: auto;
+}
+.song-info {
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+.song-name,
+.artist-name {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.artist-name {
+  margin-top: 3px;
+  font-size: 12px;
+  color: rgba(230, 239, 251, 0.8);
+}
+.song-name {
+  color: rgba(230, 239, 251, 0.89);
+}
+.line {
+  width: 150px;
+  height: 3px;
+  margin-right: 20px;
+  background: rgb(39, 44, 203);
+  border-radius: 4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: stretch 10s ease-in-out infinite;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scaleX(0);
+    box-shadow: 0 0 0px rgba(0, 229, 255, 0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scaleX(1);
+    box-shadow: 0 0 20px 4px rgba(39, 44, 203, 0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    box-shadow: 0 0 0px rgba(0, 229, 255, 0);
+    opacity: 0.8;
+  }
+}
+audio {
+  width: 120px;
+}
+.worning {
+  font-size: 13px;
+  color: rgba(230, 239, 251, 0.8);
+  margin-top: 30px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .header {
+    font-size: 30px;
+  }
+  .music-box {
+    width: 87%;
+    height: 500px;
+  }
+  .big-text {
+    font-size: 25px;
+  }
+  .small-text {
+    font-size: 15px;
+  }
+
+  .input-container {
+    width: 87%;
+    margin: 20px 0;
+  }
+  .player-left {
+    height: 55px;
+  }
+  .player-middel {
+    margin-left: 15px;
+  }
+  .artist-name {
+    font-size: 9px;
+  }
+  .song-name {
+    font-size: 12px;
+  }
+  .line {
+    width: 80px;
+    height: 2px;
+  }
+  .music-player {
+    padding: 12px;
+    width: 85%;
+  }
+  body {
+    background-image: url(Images/backgroundMob.jfif);
+  }
+  .worning {
+    font-size: 12px;
+    color: rgba(230, 239, 251, 0.8);
+    margin-top: 30px;
+    text-align: center;
+  }
+}
