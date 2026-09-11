@@ -175,6 +175,12 @@ audio {
 .worning2 {
   font-size: 13px;
   color: rgba(230, 239, 251, 0.8);
+  margin-top: 20px;
+  text-align: center;
+}
+.worning3 {
+  font-size: 13px;
+  color: rgba(230, 239, 251, 0.8);
   margin-top: 10px;
   text-align: center;
 }
