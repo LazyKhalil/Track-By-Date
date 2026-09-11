@@ -172,6 +172,12 @@ audio {
   margin-top: 30px;
   text-align: center;
 }
+.worning2 {
+  font-size: 13px;
+  color: rgba(230, 239, 251, 0.8);
+  margin-top: 10px;
+  text-align: center;
+}
 @media (max-width: 600px) {
   .header {
     font-size: 30px;
