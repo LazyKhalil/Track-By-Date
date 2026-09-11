@@ -181,7 +181,7 @@ audio {
 .worning3 {
   font-size: 13px;
   color: rgba(230, 239, 251, 0.8);
-  margin-top: 10px;
+  margin-top: 3px;
   text-align: center;
 }
 @media (max-width: 600px) {
